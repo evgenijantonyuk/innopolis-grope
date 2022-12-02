@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт группы</title>
+    <link rel="stylesheet" href="fonts">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contacts.css">
+    <script defer src="js/login-popup.js"></script>
+</head>
+
+
+<body class="root">
+    <header class="header">
+      <div class="header__logo">
+        <img src="images/Innopolis_Logo.svg" alt="Лого университета Иннополис">
+      </div>
+      <ul class="header__items">
+        <li>
+          <a class="header__item" href="index.html">Главная</a>
+        </li>
+        <li>
+          <a class="header__item" href="students.html">Студенты</a>
+        </li>
+        <li>
+          <a class="header__item" href="about.html">О курсе</a>
+        </li>
+        <li>
+          <a class="header__item header__active-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <a href="login.html" class="login-button">Войти</a>
+      <div class="login-popup">
+        <h2 class="login-heading">Войти на сайт</h2>
+        <form class="login-form" action="#" method="GET">
+          <input type="text" class="login-input" name="login" placeholder="Логин" required="">
+          <input type="password" class="password-input" name="password" placeholder="Пароль" required="">
+          <button class="popup-button" type="submit">Войти</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+        <div class="main__map">
+          <h1 class="main__title">Как нас найти 🗺️️</h1>
+              <div style="position:relative;overflow:hidden;"><a
+                  href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+                  href="https://yandex.ru/maps/2/saint-petersburg/catalog/?ll=30.250827%2C59.945124&utm_medium=mapframe&utm_source=maps&z=10.42"
+                  style="color:#eee;font-size:12px;position:absolute;top:14px;">374 837 организаций Санкт‑Петербурга —
+                  Яндекс Карты</a><iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCUfMHFRGD" width="560" height="400" frameborder="1"
+                  allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+        <div class="main__contacts">
+            <h2 class="contacts__title">Наши контакты</h2>
+                <address class="main__address">Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000</address>
+                  <a class="main__tel" href="tel+78125555555">Тел: +7 (812) 555-55-55</a>
+        </div>
+    </main>
+
+      <footer class="footer">
+      <p class="footer__text">2022&#169;<a href="#" class="footer__text_link">учебный центр</a></p>
+    </footer>
+  </body>
+
+</html>

@@ -1,0 +1,349 @@
+
+.root {
+    font-family: 'Roboto', 'sans-serif', serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("fonts/Roboto-Bold.woff2") format("woff2");
+    src: url("fonts/Roboto-Bold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("fonts/Roboto-Bold.woff2") format("woff2");
+    src: url("fonts/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("fonts/Roboto-Regular.woff2") format("woff2");
+    src: url("fonts/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*..........header...... */
+.header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 33px;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #213B7E;
+    padding: 0 16px;
+}
+
+.header__logo {
+    display: flex;
+    width: 47px;
+    height: 47px;
+    justify-items: center;
+}
+
+
+.header__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__item {
+    display: flex;
+    margin: 0;
+    padding: 0 16px;
+    min-height: 80px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    height: 100%;
+    color: #FFFFFF;
+}
+
+
+.header__item:hover {
+    color: #213B7E;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.btn__reset {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.login-button {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    background-color: #EA5D21;
+    padding: 15px 51px;
+    border: none;
+}
+
+.login-button:hover {
+    color: #646464;
+    background-color: rgb(145, 15, 15);
+}
+
+/* .......login popup......... */
+.login-popup {
+    display: flex;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    bottom: -500px;
+    left: 30%;
+    transform: rotate(-50%, 100%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    height: 418px;
+    padding: 26px 28px 56px;
+    background-color: #FFFFFF;
+    border: 1px solid #213B7E;
+    box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.login-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.login-input {
+    width: 100%;
+    max-width: 444px;
+    min-height: 55px;
+    margin-bottom: 56px;
+    padding-left: 14px;
+}
+
+.password-input {
+    width: 100%;
+    max-width: 444px;
+    min-height: 55px;
+    margin-bottom: 56px;
+    padding-left: 14px;
+}
+
+.login-input::placeholder,
+.password-input::placeholder {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+.popup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    position: absolute;
+    width: 100%;
+    max-width: 153px;
+    min-height: 50px;
+    top: 327px;
+    color: #FFFFFF;
+    background: #EA6113;
+    cursor: pointer;
+}
+
+.popup-button:hover {
+    color: #646464;
+    background-color: rgb(145, 15, 15);
+}
+
+@media (max-width: 1024px) {
+    .login-popup {
+    left: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-popup {
+        left: 15%;
+    }
+}
+
+@media (max-width: 595px) {
+    .login-popup {
+        left: 0;
+    }
+}
+
+/* .....main..... */
+.main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 911px;
+    margin: 0 auto;
+    /* height: 100vh; */
+    flex-grow: 1;
+    padding: 0 2vw;
+}
+
+.main__title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    color: #000;
+}
+
+.main__class_photo {
+    margin: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 523px;
+    height: 316px;
+    object-fit: cover ;
+}
+
+.description__title {
+    margin: 0;
+    margin-bottom: 10px;
+    flex-direction: column;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #000;
+}
+
+.course__description {
+    margin: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 634px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+}
+
+.course__description--bold {
+    font-weight: 700;
+}
+
+.course__description--red {
+    font-style: italic;
+    color: #CF5510;
+}
+
+.study__together {
+    float: right;
+    margin: 0;
+    margin-left: 94px;
+    max-width: 183px;
+    font-family: "Lobster";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    color: #646464;
+}
+
+/* ....footer.... */
+.footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: #213B7E;
+}
+
+.footer__text {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__text_link {
+    margin: 0;
+    padding-left: 5px;
+    display: flex;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*............... responsive ..................*/
+@media (max-width: 630px) {
+    .header__logo {
+        width: 100%;
+        min-height: 80px;
+        padding-top: 25px;
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+        .header {
+            justify-content: center;
+            padding: 1em 16px;
+            gap: 1em;
+    }
+        .header__items {
+            justify-content: center;
+    }
+}
+
+/* ....JS.... */
+.show-popup {
+    display: block;
+}
+
+.header__active-link {
+    color: #213B7E;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+

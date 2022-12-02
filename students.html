@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт группы</title>
+    <link rel="stylesheet" href="fonts">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="students.css">
+    <script defer src="js/login-popup.js"></script>
+  </head>
+
+
+  <body class="root">
+    <header class="header">
+      <div class="header__logo">
+        <img src="images/Innopolis_Logo.svg" alt="Лого университета Иннополис">
+      </div>
+      <ul class="header__items">
+        <li>
+          <a class="header__item" href="index.html">Главная</a>
+        </li>
+        <li>
+          <a class="header__item header__active-link" href="#">Студенты</a>
+        </li>
+        <li>
+          <a class="header__item" href="about.html">О курсе</a>
+        </li>
+        <li>
+          <a class="header__item" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+      <a href="login.html" class="login-button">Войти</a>
+      <div class="login-popup">
+        <h2 class="login-heading">Войти на сайт</h2>
+        <form class="login-form" action="#" method="GET">
+          <input type="text" class="login-input" name="login" placeholder="Логин" required="">
+          <input type="password" class="password-input" name="password" placeholder="Пароль" required="">
+          <button class="popup-button" type="submit">Войти</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 class="main__title">Студенты потока 08.02.2020 </h1>
+      <div class="students__list">
+        <section class="student__block">
+          <a href="about.me.html" class="my__page"><img class="student-me" src="images/I am.jpg" alt="мое фото" width="200" height="270">
+          <p class="student__name">Евгений Антонюк</p></a>
+        </section>
+        <section class="student__block--status">
+          <img class="student" src="images/avatar-woman.svg" alt="фото студента" width="200" height="270">
+          <p class="student__name">Мария
+            Александрова</p>
+          <p class="student__name--status">НОВИЧОК</p>
+        </section>
+        <section class="student__block">
+          <img class="student" src="images/avatar-woman.svg" alt="фото студента" width="200" height="270">
+          <p class="student__name">Мария
+            Александрова</p>
+        </section>
+        <section class="student__block">
+          <img class="student" src="images/avatar-man.svg" alt="фото студента" width="200" height="270">
+          <p class="student__name">Василий Иванов</p>
+        </section>
+        <section class="student__block">
+          <img class="student" src="images/avatar-man.svg" alt="фото студента" width="200" height="270">
+          <p class="student__name">Василий Иванов</p>
+        </section>
+        <section class="student__block">
+          <img class="student" src="images/avatar-woman.svg" alt="фото студента" width="200" height="270">
+          <p class="student__name">Мария
+            Александрова</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span class="footer__text">2022&#169;<a href="#" class="footer__text_link">учебный центр</a></span>
+    </footer>
+  </body>
+
+</html>
